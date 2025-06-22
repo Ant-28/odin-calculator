@@ -175,7 +175,7 @@ const processEXE = () => {
         return;
     }
     calculatorState.valueInStack = true;
-    calculatorState.iobuffer = calculatorState.stack[0];
+    calculatorState.iobuffer = `${calculatorState.stack[0]}`;
     calculatorState.decimalClicked = false; // completed computation so decimal no longer clicked
 }
 
