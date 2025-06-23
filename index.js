@@ -13,7 +13,7 @@ bodyelem = document.querySelector("body");
 calculatorBox  = appendNewElement(bodyelem, "article");
 
 // set up sections (each row of calculator)
-let calculatorState = {
+const calculatorState = {
     // decimal can only be clicked once per number 
     decimalClicked : false,
     iobuffer       : "",
@@ -23,8 +23,8 @@ let calculatorState = {
     valueInStack : false // is the calculated value already in the stack?
 }
 const CALC_ROWS = 5;
-let sectionArr = [];
-let sectionNames = [];
+const sectionArr = [];
+const sectionNames = [];
 // 5 sections, for now
 for(let i = 0; i < CALC_ROWS; i++){
     sectionArr.push(appendNewElement(calculatorBox, "section"));
